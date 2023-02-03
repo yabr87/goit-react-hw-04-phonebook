@@ -5,7 +5,7 @@ const Filter = ({ filterValue, onFilterInputChange }) => {
   return (
     <div className={s.filterWrapper}>
       <label className={s.filterLabel} htmlFor="idFilter">
-        Find contacts by name{' '}
+        Find contacts by name
       </label>
       <input
         autoComplete="off"
@@ -13,7 +13,7 @@ const Filter = ({ filterValue, onFilterInputChange }) => {
         className={s.input}
         name="filter"
         value={filterValue}
-        onChange={e => onFilterInputChange(e)}
+        onChange={e => onFilterInputChange(e.target.value)}
       />
     </div>
   );
